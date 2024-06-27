@@ -1,0 +1,160 @@
+:root {
+    --mainFont: Georgia;
+    --size: 100px;
+    --mainColor: #D842EB;
+    --mainDark: #AC34BC;
+    --redAnalogous: #eb42aa;
+    --blueAnalogous: #8442eb;
+    --black1: #000;
+    --black2: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--black2);
+    color: var(--mainColor);
+}
+
+.sticky-header,
+header,
+footer {
+    background-color: var(--black1);
+    text-align: left;
+    position: sticky;
+    color: var(--blueAnalogous);
+}
+
+.sticky-header {
+    top: 0;
+    z-index: 1000;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.MainTitle {
+    color: var(--blueAnalogous);
+    font-family: var(--mainFont);
+    font-size: 48px ;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.Subtile,
+p {
+    color: #fff;
+    margin: 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    max-height: 150px;
+    margin-right: 1em;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+nav {
+    display: flex;
+    justify-content: baseline;
+    background-color: var(--blueAnalogous);
+}
+
+nav a {
+    color: var(--redAnalogous);
+    font-family: var(--mainFont);
+    font-weight: bold;
+    padding: 1em;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--mainColor);
+    color: var(--blueAnalogous);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+.prefooter {
+    height: 82px;
+}
+
+h1,
+h2 {
+    color: var(--mainColor);
+    font-family: var(--mainFont);
+}
+
+h2:hover {
+    color: var(--redAnalogous);
+}
+
+.brdContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dark-square,
+.light-square {
+    height: var(--size);
+    width: var(--size);
+    display: flex;
+    flex-direction: column;
+    font-size: 15%;
+    padding: 0;
+    color: #000;
+}
+
+.dark-square {
+    background-color: var(--mainDark);
+}
+
+.light-square {
+    background-color: var(--mainColor);
+}
+
+.piece {
+    height: 80%;
+    width: 80%;
+    align-self: center;
+}
+
+.chessboard {
+    background-color: var(--mainColor);
+    height: calc(8 * var(--size));
+    width: calc(8 * var(--size));
+    display: grid;
+    grid-template-columns: repeat(8, var(--size));
+    grid-template-rows: repeat(8, var(--size));
+}
+
+.btn {
+    background-color: var(--mainColor);
+    color: var(--black1);
+    font-family: var(--mainFont);
+    font-size: 22px;
+    border-radius: 15px;
+    border-color: var(--mainDark);
+}
